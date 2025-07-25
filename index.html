@@ -3,93 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>smartest::artist("expert")</title>
+  <title>Smartest Artist Playstore</title>
+  <link rel="stylesheet" href="https://css.smartestartist.expert/core.css">
   <style>
     body {
       margin: 0;
-      padding: 1em;
-      font-family: "Courier New", Courier, monospace;
-      background: radial-gradient(ellipse at center, #101010 0%, #000000 100%);
-      color: #00ff88;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
       display: flex;
       flex-direction: column;
-      align-items: center;
       min-height: 100vh;
-      box-sizing: border-box;
     }
 
-    h1 {
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      margin-bottom: 1em;
-      background: linear-gradient(to right, #00ff88, #00ccff, violet);
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: linear-gradient(to right, #111, #1a1a1a);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(to right, gold, violet, deepskyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      text-align: center;
-      word-break: break-word;
-      overflow-wrap: break-word;
-      max-width: 90vw;
+      margin: 0;
     }
 
-    .terminal-box {
-      background: #111;
-      border: 1px solid #0f0;
-      padding: 1em;
+    header p {
+      opacity: 0.8;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
       width: 100%;
-      max-width: 800px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px #0f05;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .terminal-box p {
-      margin: 0.5em 0;
+    .category {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 1.5rem;
+      border: 1px solid #333;
+      transition: transform 0.2s ease;
     }
 
-    .repo-list {
-      margin-top: 1em;
-      list-style: none;
-      padding-left: 0;
+    .category:hover {
+      transform: translateY(-4px);
     }
 
-    .repo-list li {
-      padding: 0.5em 0;
-      border-bottom: 1px dashed #0f0;
+    .category h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(to right, deepskyblue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .repo-list a {
-      color: #0f0;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    .repo-list a:hover {
-      color: #fff;
-      text-shadow: 0 0 5px #0f0;
+    .category p {
+      font-size: 0.95rem;
+      opacity: 0.75;
     }
 
     footer {
-      margin-top: 2em;
-      font-size: 0.8rem;
-      opacity: 0.5;
       text-align: center;
-      max-width: 90vw;
+      font-size: 0.8rem;
+      opacity: 0.4;
+      padding: 1rem;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
-  <h1>smartest::artist("expert")</h1>
-  <div class="terminal-box">
-    <p>Welcome to the Smartest Artist Playstore.</p>
-    <p>Retro-inspired tools, games, and utilities by smartest::artist()</p>
-    <ul class="repo-list">
-      <li><a href="#">🕹️ pet-trainer</a> - Offline pet sim with cookie memory</li>
-      <li><a href="#">⚔️ terminal-wars</a> - Script battle vs other offline players</li>
-      <li><a href="#">🏰 dungeon-builder</a> - Build your own dungeon server</li>
-      <li><a href="#">💾 offline-arena</a> - PvP with GET-save PHP links</li>
-    </ul>
-  </div>
+  <header>
+    <h1>Smartest Artist Playstore</h1>
+    <p>Tools, apps, games, and creative experiments built by and for thinkers & artists.</p>
+  </header>
+
+  <section class="categories">
+    <div class="category">
+      <h2>Creative Tools</h2>
+      <p>Mini apps for drawing, design, coding, animation, and remixing content.</p>
+    </div>
+    <div class="category">
+      <h2>Games & Simulations</h2>
+      <p>Fun projects with purpose — puzzles, logic, strategy, physics-based experiments.</p>
+    </div>
+    <div class="category">
+      <h2>Learning Kits</h2>
+      <p>Explore subjects like math, code, language, and more — made to engage and teach.</p>
+    </div>
+    <div class="category">
+      <h2>Dev Experiments</h2>
+      <p>Testbeds and dev playgrounds for students and hobby coders — try the unexpected.</p>
+    </div>
+  </section>
+
   <footer>
-    &copy; 2025 smartest::artist("expert"). Powered by vibes & retro bytes.
+    &copy; 2025 Smartest Artist — Playstore.
   </footer>
 </body>
 </html>
