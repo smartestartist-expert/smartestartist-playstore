@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>smartest::artist("expert") Playstore</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      background: #0a0a0a;
+      color: #c0ffc0;
+      font-family: 'Share Tech Mono', monospace;
+      margin: 2rem auto;
+      max-width: 700px;
+      padding: 1rem 2rem;
+      border: 2px dashed #0f0;
+      box-shadow: 0 0 15px #0f0 inset;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+      display: inline-block;
+      position: relative;
+    }
+
+    /* blinking cursor */
+    h1::after {
+      content: '|';
+      position: absolute;
+      right: -12px;
+      animation: blink 1.2s steps(2, start) infinite;
+      color: #00ff99;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    p.slogan {
+      font-style: italic;
+      color: #55aa55;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      letter-spacing: 0.06em;
+    }
+
+    ul.repo-list {
+      list-style: none;
+      padding-left: 0;
+      opacity: 0;
+      animation: fadeIn 1.8s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    ul.repo-list li {
+      margin: 1rem 0;
+      border-left: 3px solid #00ff99;
+      padding-left: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.repo-list li:hover {
+      background-color: #003300;
+      cursor: pointer;
+    }
+
+    ul.repo-list a {
+      color: #00cc00;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    ul.repo-list a:hover {
+      color: #00ff99;
+      text-shadow: 0 0 8px #00ff99;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #336633;
+      text-align: center;
+      border-top: 1px solid #004400;
+      padding-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>smartest::artist("expert")</h1>
+  <p class="slogan">offline toys &amp; executable ideas</p>
+
+  <ul class="repo-list">
+    <li><a href="https://github.com/YOUR_USERNAME/pet-brawl" target="_blank" rel="noopener noreferrer">Pet Brawl</a> - train, evolve, and battle pets (offline/online hybrid)</li>
+    <li><a href="https://github.com/YOUR_USERNAME/multi-dungeon-kit" target="_blank" rel="noopener noreferrer">Multi-Dungeon Kit</a> - self-hosted RPG server package</li>
+    <li><a href="https://github.com/YOUR_USERNAME/client-browser" target="_blank" rel="noopener noreferrer">Client Browser</a> - retro-styled launcher for connecting to vibe servers</li>
+    <li><a href="https://github.com/YOUR_USERNAME/php-rpg-sandbox" target="_blank" rel="noopener noreferrer">PHP RPG Sandbox</a> - URL-based game saves, browser-only</li>
+  </ul>
+
+  <footer>
+    &copy; 2025 smartest::artist(). All rights reserved. Static index for GitHub repo showcase. Powered by vibes and imagination.
+  </footer>
+</body>
+</html>
