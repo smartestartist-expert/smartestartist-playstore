@@ -4,110 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smartest Artist Playstore</title>
-  <link rel="stylesheet" href="https://css.smartestartist.expert/core.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
       font-family: system-ui, sans-serif;
-      background: #0b0b0b;
+      background: #0e0e0e;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
     header {
-      padding: 2rem 1rem;
       text-align: center;
-      background: linear-gradient(to right, #111, #1a1a1a);
+      padding: 2rem 1rem;
+      background: linear-gradient(to right, #111, #1c1c1c);
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
+      margin: 0;
       background: linear-gradient(to right, gold, violet, deepskyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin: 0;
     }
 
     header p {
-      opacity: 0.8;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      opacity: 0.7;
       margin-top: 0.5rem;
     }
 
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      width: 100%;
-      max-width: 1200px;
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 1rem;
+      max-width: 960px;
       margin: auto;
     }
 
-    .category {
+    section {
       background: #1a1a1a;
       border-radius: 10px;
-      padding: 1.5rem;
+      padding: 1rem 1.5rem;
       border: 1px solid #333;
-      transition: transform 0.2s ease;
     }
 
-    .category:hover {
-      transform: translateY(-4px);
-    }
-
-    .category h2 {
-      font-size: 1.4rem;
+    section h2 {
+      font-size: 1.5rem;
+      color: #ffd700;
       margin-bottom: 0.8rem;
-      background: linear-gradient(to right, deepskyblue, violet);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
-    .category p {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    li {
+      background: #2a2a2a;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      flex: 1 1 140px;
+      text-align: center;
+      border: 1px solid #444;
       font-size: 0.95rem;
-      opacity: 0.75;
     }
 
     footer {
       text-align: center;
       font-size: 0.8rem;
       opacity: 0.4;
-      padding: 1rem;
-      margin-top: auto;
+      padding: 2rem 1rem 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      li {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Smartest Artist Playstore</h1>
-    <p>Tools, apps, games, and creative experiments built by and for thinkers & artists.</p>
+    <p>Explore creative projects, games, tools & experiments.</p>
   </header>
 
-  <section class="categories">
-    <div class="category">
-      <h2>Creative Tools</h2>
-      <p>Mini apps for drawing, design, coding, animation, and remixing content.</p>
-    </div>
-    <div class="category">
-      <h2>Games & Simulations</h2>
-      <p>Fun projects with purpose — puzzles, logic, strategy, physics-based experiments.</p>
-    </div>
-    <div class="category">
-      <h2>Learning Kits</h2>
-      <p>Explore subjects like math, code, language, and more — made to engage and teach.</p>
-    </div>
-    <div class="category">
-      <h2>Dev Experiments</h2>
-      <p>Testbeds and dev playgrounds for students and hobby coders — try the unexpected.</p>
-    </div>
-  </section>
+  <main>
+    <section>
+      <h2>Games</h2>
+      <ul>
+        <li>Pixel Arena</li>
+        <li>Script Duel</li>
+        <li>Retro Dungeon</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Reading</h2>
+      <ul>
+        <li>Byte Fables</li>
+        <li>Code Journals</li>
+        <li>AI Dialogues</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+      <ul>
+        <li>Music Tools</li>
+        <li>Video Remixers</li>
+        <li>Gallery Viewer</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tools</h2>
+      <ul>
+        <li>Palette Generator</li>
+        <li>Prompt Crafter</li>
+        <li>Font Tweaker</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiments</h2>
+      <ul>
+        <li>Neuro Arcade</li>
+        <li>Quantum Picker</li>
+        <li>Word Synth</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Smartest Artist — Playstore.
+    &copy; 2025 Smartest Artist — Playstore
   </footer>
 </body>
 </html>
