@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      padding: 2em;
+      padding: 1em;
       font-family: "Courier New", Courier, monospace;
       background: radial-gradient(ellipse at center, #101010 0%, #000000 100%);
       color: #00ff88;
@@ -15,25 +15,34 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5em;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      margin-bottom: 1em;
       background: linear-gradient(to right, #00ff88, #00ccff, violet);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
+      text-align: center;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      max-width: 90vw;
     }
 
     .terminal-box {
       background: #111;
       border: 1px solid #0f0;
-      padding: 1.5em;
+      padding: 1em;
       width: 100%;
       max-width: 800px;
       border-radius: 8px;
       box-shadow: 0 0 20px #0f05;
+    }
+
+    .terminal-box p {
+      margin: 0.5em 0;
     }
 
     .repo-list {
@@ -50,6 +59,7 @@
     .repo-list a {
       color: #0f0;
       text-decoration: none;
+      word-break: break-word;
     }
 
     .repo-list a:hover {
@@ -61,6 +71,8 @@
       margin-top: 2em;
       font-size: 0.8rem;
       opacity: 0.5;
+      text-align: center;
+      max-width: 90vw;
     }
   </style>
 </head>
@@ -70,10 +82,10 @@
     <p>Welcome to the Smartest Artist Playstore.</p>
     <p>Retro-inspired tools, games, and utilities by smartest::artist()</p>
     <ul class="repo-list">
-      <li><a href="https://github.com/smartestartist-expert/pet-trainer" target="_blank">🕹️ pet-trainer</a> - Offline pet sim with cookie memory</li>
-      <li><a href="https://github.com/smartestartist-expert/terminal-wars" target="_blank">⚔️ terminal-wars</a> - Script battle against other offline players</li>
-      <li><a href="https://github.com/smartestartist-expert/dungeon-builder" target="_blank">🏰 dungeon-builder</a> - Generate your own server-based dungeon game</li>
-      <li><a href="https://github.com/smartestartist-expert/offline-arena" target="_blank">💾 offline-arena</a> - PHP-only player-vs-player arena using GET save URLs</li>
+      <li><a href="#">🕹️ pet-trainer</a> - Offline pet sim with cookie memory</li>
+      <li><a href="#">⚔️ terminal-wars</a> - Script battle vs other offline players</li>
+      <li><a href="#">🏰 dungeon-builder</a> - Build your own dungeon server</li>
+      <li><a href="#">💾 offline-arena</a> - PvP with GET-save PHP links</li>
     </ul>
   </div>
   <footer>
